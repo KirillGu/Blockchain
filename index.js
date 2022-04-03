@@ -3,7 +3,7 @@ const EC = require('elliptic').ec;
 const ec = new EC('secp256k1');
 
 const coin = new Blockchain();
-const myKey = ec.keyFromPrivate('4bcbb6bf2c3ab9f27274e10bd4948ba28daccda0833d707e351c59894cd34bc0');
+const myKey = ec.keyFromPrivate('');
 const myWalletAddress = myKey.getPublic('hex')
 
 const tx1 = new Transactions(myWalletAddress, 'public key ', 10)
